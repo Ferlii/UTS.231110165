@@ -4,39 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tentang - Flawsome Fashion</title>
-
-    <!-- Font Awesome untuk ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
-    integrity="sha512-d5tc0T45J7qE1uRL5B4DCw2+oyqJm8J5OCfb8+1C1y0K1v7xB2pmY7Rg3oPBzUXGZ5M0gf+NHp8e1Fg69qx0Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
         :root {
             --primary-color: hotpink;
             --bg-color: white;
             --text-color: #333;
         }
-
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-color: #121212;
                 --text-color: #f1f1f1;
             }
         }
-
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
         }
-
         header {
             background-color: #111;
             color: white;
             padding: 20px;
             text-align: center;
         }
-
         header h1 {
             display: flex;
             justify-content: center;
@@ -44,7 +39,6 @@
             gap: 10px;
             font-size: 28px;
         }
-
         nav {
             background-color: #f5f5f5;
             display: flex;
@@ -56,7 +50,6 @@
             top: 0;
             z-index: 100;
         }
-
         nav a {
             margin: 10px 20px;
             text-decoration: none;
@@ -65,13 +58,11 @@
             font-size: 16px;
             transition: color 0.3s;
         }
-
         nav a:hover {
             color: var(--primary-color);
             text-decoration: underline;
             text-underline-offset: 4px;
         }
-
         .hero {
             background-image: url('https://images.unsplash.com/photo-1483985988355-f1b18f2d0655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
@@ -83,7 +74,6 @@
             color: white;
             text-align: center;
         }
-
         .hero h1 {
             font-size: 48px;
             background-color: rgba(0,0,0,0.5);
@@ -91,43 +81,38 @@
             border-radius: 10px;
             animation: fadeIn 2s ease-in-out;
         }
-
         @keyframes fadeIn {
             from {opacity: 0;}
             to {opacity: 1;}
         }
-
         .about {
             padding: 40px;
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
         }
-
         .about h2 {
             color: var(--primary-color);
             margin-bottom: 20px;
         }
-
         .about p {
             line-height: 1.6;
             font-size: 16px;
             text-align: left;
         }
-
-        .about p a {
+        .contact {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .contact a {
             color: var(--primary-color);
             text-decoration: none;
         }
-
-        .about p a:hover {
+        .contact a:hover {
             text-decoration: underline;
         }
-
-        .about p i {
-            margin-right: 6px;
-        }
-
         footer {
             background-color: #111;
             color: white;
@@ -135,7 +120,6 @@
             padding: 15px;
             margin-top: 50px;
         }
-
         @media screen and (max-width: 600px) {
             nav a {
                 font-size: 14px;
@@ -146,32 +130,36 @@
 </head>
 <body>
 
-<header>
-    <h1>👗 Flawsome Fashion 👗</h1>
-    <p>Kami Hadir untuk Fashion Terbaikmu</p>
-</header>
+    <header>
+        <h1>👗 Flawsome Fashion 👗</h1>
+        <p>Kami Hadir untuk Fashion Terbaikmu</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="Product.html">Product</a>
-    <a href="About.html">About</a> 
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Product.html">Product</a>
+        <a href="About.html">About</a>
+    </nav>
 
-<section class="about">
-    <h2>Tentang Flawsome Fashion</h2>
-    <p><strong>Flawsome Fashion</strong> adalah brand lokal yang menghadirkan koleksi fashion yang trendy, fresh, dan cocok untuk semua kalangan muda. Dengan gaya yang selalu up to date, kami percaya bahwa tampil keren dan percaya diri bisa dimulai dari pakaian yang kamu kenakan.</p>
-    <p>Flawsome Fashion siap menemani setiap langkah gayamu, dari kasual harian sampai outfit kece buat hangout!</p>
-    <br>
-    <p><strong>Hubungi kami:</strong></p>
-    <p>
-        Instagram: <a href="#"><i class="fab fa-instagram"></i> @Flawsomefashion</a> | 
-        Email: <a href="mailto:info@flawsomefashion.id"><i class="fas fa-envelope"></i> info@flawsomefashion.id</a>
-    </p>
-</section>
+    <section class="about">
+        <h2>Tentang Flawsome Fashion</h2>
+        <p><strong>Flawsome Fashion</strong> adalah brand lokal yang menghadirkan koleksi fashion yang trendy, fresh, dan cocok untuk semua kalangan muda. Dengan gaya yang selalu up to date, kami percaya bahwa tampil keren dan percaya diri bisa dimulai dari pakaian yang kamu kenakan.</p>
+        <p>Flawsome Fashion siap menemani setiap langkah gayamu, dari kasual harian sampai outfit kece buat hangout!</p>
 
-<footer>
-    &copy; 2025 Flawsome Fashion. All rights reserved.
-</footer>
+        <div class="contact">
+            <p><strong>Hubungi kami:</strong></p>
+            <p>
+                <i class="fab fa-instagram"></i> Instagram: 
+                <a href="#">@Flawsomefashion</a> | 
+                <i class="fas fa-envelope"></i> Email: 
+                <a href="mailto:info@flawsomefashion.id">info@flawsomefashion.id</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Flawsome Fashion. All rights reserved.
+    </footer>
 
 </body>
 </html>
