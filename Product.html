@@ -1,197 +1,226 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produk - Flawsome Fashion</title>
-  <style>
-    :root {
-      --primary-color: hotpink;
-      --bg-color: white;
-      --text-color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Flawsome Fashion</title>
+    <style>
+        :root {
+            --primary-color: hotpink;
+            --bg-color: white;
+            --text-color: #333;
+        }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg-color: #121212;
-        --text-color: #f1f1f1;
-      }
-    }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #f1f1f1;
+            }
+        }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
 
-    header {
-      background-color: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-    header h1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      font-size: 28px;
-    }
+        header h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 28px;
+        }
 
-    nav {
-      background-color: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+        nav {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-    nav a {
-      margin: 10px 20px;
-      text-decoration: none;
-      color: #111;
-      font-weight: bold;
-      font-size: 16px;
-      transition: color 0.3s;
-    }
+        nav a {
+            margin: 10px 20px;
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-    nav a:hover {
-      color: var(--primary-color);
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
+        nav a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
 
-    .produk-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1523381294911-8d3cead13475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Ganti dengan gambar produk yang sesuai */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
 
-    .produk-card {
-      border: 1px solid #ddd;
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
+        .hero h1 {
+            font-size: 48px;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-    .produk-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
 
-    .produk-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+        .produk-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
 
-    .produk-card h3 {
-      margin: 10px 0;
-      color: var(--primary-color);
-    }
+        .produk-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
 
-    form {
-      padding: 0 40px 40px;
-      max-width: 500px;
-      margin: auto;
-    }
+        .produk-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
 
-    form h3 {
-      color: var(--primary-color);
-      text-align: center;
-    }
+        .produk-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
 
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
+        .produk-card h3 {
+            margin: 10px 0;
+            color: var(--primary-color);
+        }
 
-    form button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      display: block;
-      width: 100%;
-    }
+        form {
+            padding: 0 40px 40px;
+            max-width: 500px;
+            margin: auto;
+        }
 
-    form button:hover {
-      background-color: deeppink;
-    }
+        form h3 {
+            color: var(--primary-color);
+            text-align: center;
+        }
 
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
 
-    @media screen and (max-width: 600px) {
-      nav a {
-        font-size: 14px;
-        margin: 8px;
-      }
-    }
-  </style>
+        form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+        }
+
+        form button:hover {
+            background-color: deeppink;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                font-size: 14px;
+                margin: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>👗 Flawsome Fashion 👗</h1>
-    <p>Temukan fashion terbaik untuk gayamu!</p>
-  </header>
+    <header>
+        <h1>👗 Flawsome Fashion 👗</h1>
+        <p>Temukan fashion terbaik untuk gayamu!</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="Product.html">Product</a>
-    <a href="About.html">About</a>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+    </nav>
 
-  <section class="produk-container">
-    <div class="produk-card">
-      <img src="hl.jpg" alt="high heels grey">
-      <h3>Casual High Heels</h3>
-      <p>Rp 790.000</p>
-    </div>
-    <div class="produk-card">
-      <img src="elb.jpg" alt="Dress hitam">
-      <h3>Elegant Dress</h3>
-      <p>Rp 965.000</p>
-    </div>
-    <div class="produk-card">
-      <img src="tas.png" alt="Tas">
-      <h3>Honogram Bag</h3>
-      <p>Rp 599.000</p>
-    </div>
-  </section>
+    <section class="hero">
+        <h1>Lihat Koleksi Produk Kami</h1>
+    </section>
 
-  <form>
-    <h3>Formulir Pemesanan</h3>
-    <input type="text" placeholder="Nama Lengkap" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Pesan atau produk yang ingin dipesan" rows="4" required></textarea>
-    <button type="submit">Kirim</button>
-  </form>
+    <section class="produk-container">
+        <div class="produk-card">
+            <img src="hl.jpg" alt="high heels grey">
+            <h3>Casual High Heels</h3>
+            <p>Rp 790.000</p>
+        </div>
+        <div class="produk-card">
+            <img src="elb.jpg" alt="Dress hitam">
+            <h3>Elegant Dress</h3>
+            <p>Rp 965.000</p>
+        </div>
+        <div class="produk-card">
+            <img src="tas.png" alt="Tas">
+            <h3>Honogram Bag</h3>
+            <p>Rp 599.000</p>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Flawsome Fashion. All rights reserved.
-  </footer>
+    <form>
+        <h3>Formulir Pemesanan</h3>
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan atau produk yang ingin dipesan" rows="4" required></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <footer>
+        &copy; 2025 Flawsome Fashion. All rights reserved.
+    </footer>
 
 </body>
 </html>
