@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang - Flawsome Fashion</title>
+  <style>
+    :root {
+      --primary-color: hotpink;
+      --bg-color: white;
+      --text-color: #333;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #121212;
+        --text-color: #f1f1f1;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 28px;
+    }
+
+    nav {
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 10px 20px;
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .about {
+      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav a {
+        font-size: 14px;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👗 Flawsome Fashion 👗</h1>
+    <p>Kami Hadir untuk Fashion Terbaikmu</p>
+  </header>
+
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="Product.html">Product</a>
+    <a href="About.html">About</a>
+  </nav>
+
+  <section class="about">
+    <h2>Tentang Flawsome Fashion</h2>
+    <p><strong>Flawsome Fashion</strong> adalah brand lokal yang menghadirkan koleksi fashion yang trendy, fresh, dan cocok untuk semua kalangan muda</strong>. Dengan gaya yang selalu up to date, kami percaya bahwa tampil keren dan percaya diri bisa dimulai dari pakaian yang kamu kenakan.</p>
+    <p>Flawsome Fashion siap menemani setiap langkah gayamu, dari kasual harian sampai outfit kece buat hangout!</p>
+    <br>
+    <p><strong>Hubungi kami:</strong></p>
+    <p>Instagram: <a href="#">@Flawsomefashion</a> | Email: info@flawsomefashion.id</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Flawsome Fashion. All rights reserved.
+  </footer>
+
+</body>
+</html>
