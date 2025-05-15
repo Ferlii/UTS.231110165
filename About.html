@@ -1,130 +1,160 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tentang - Flawsome Fashion</title>
-  <style>
-    :root {
-      --primary-color: hotpink;
-      --bg-color: white;
-      --text-color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - Flawsome Fashion</title>
+    <style>
+        :root {
+            --primary-color: hotpink;
+            --bg-color: white;
+            --text-color: #333;
+        }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg-color: #121212;
-        --text-color: #f1f1f1;
-      }
-    }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #f1f1f1;
+            }
+        }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
 
-    header {
-      background-color: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-    header h1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      font-size: 28px;
-    }
+        header h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 28px;
+        }
 
-    nav {
-      background-color: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+        nav {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-    nav a {
-      margin: 10px 20px;
-      text-decoration: none;
-      color: #111;
-      font-weight: bold;
-      font-size: 16px;
-      transition: color 0.3s;
-    }
+        nav a {
+            margin: 10px 20px;
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-    nav a:hover {
-      color: var(--primary-color);
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
+        nav a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
 
-    .about {
-      padding: 40px;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1483985988355-f1b18f2d0655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Ganti dengan gambar tentang kami yang sesuai */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
 
-    .about h2 {
-      color: var(--primary-color);
-      margin-bottom: 20px;
-    }
+        .hero h1 {
+            font-size: 48px;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-    .about p {
-      line-height: 1.6;
-      font-size: 16px;
-    }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
 
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
+        .about {
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-    @media screen and (max-width: 600px) {
-      nav a {
-        font-size: 14px;
-        margin: 8px;
-      }
-    }
-  </style>
+        .about h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            line-height: 1.6;
+            font-size: 16px;
+            text-align: left; /* Agar teks "tentang kami" tidak terlalu lebar di tengah */
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                font-size: 14px;
+                margin: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>👗 Flawsome Fashion 👗</h1>
-    <p>Kami Hadir untuk Fashion Terbaikmu</p>
-  </header>
+    <header>
+        <h1>👗 Flawsome Fashion 👗</h1>
+        <p>Kami Hadir untuk Fashion Terbaikmu</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="Product.html">Product</a>
-    <a href="About.html">About</a>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+    </nav>
 
-  <section class="about">
-    <h2>Tentang Flawsome Fashion</h2>
-    <p><strong>Flawsome Fashion</strong> adalah brand lokal yang menghadirkan koleksi fashion yang trendy, fresh, dan cocok untuk semua kalangan muda</strong>. Dengan gaya yang selalu up to date, kami percaya bahwa tampil keren dan percaya diri bisa dimulai dari pakaian yang kamu kenakan.</p>
-    <p>Flawsome Fashion siap menemani setiap langkah gayamu, dari kasual harian sampai outfit kece buat hangout!</p>
-    <br>
-    <p><strong>Hubungi kami:</strong></p>
-    <p>Instagram: <a href="#">@Flawsomefashion</a> | Email: info@flawsomefashion.id</p>
-  </section>
+    <section class="hero">
+        <h1>Tentang Kami</h1>
+    </section>
 
-  <footer>
-    &copy; 2025 Flawsome Fashion. All rights reserved.
-  </footer>
+    <section class="about">
+        <h2>Tentang Flawsome Fashion</h2>
+        <p><strong>Flawsome Fashion</strong> adalah brand lokal yang menghadirkan koleksi fashion yang trendy, fresh, dan cocok untuk semua kalangan muda. Dengan gaya yang selalu up to date, kami percaya bahwa tampil keren dan percaya diri bisa dimulai dari pakaian yang kamu kenakan.</p>
+        <p>Flawsome Fashion siap menemani setiap langkah gayamu, dari kasual harian sampai outfit kece buat hangout!</p>
+        <br>
+        <p><strong>Hubungi kami:</strong></p>
+        <p>Instagram: <a href="#">@Flawsomefashion</a> | Email: info@flawsomefashion.id</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Flawsome Fashion. All rights reserved.
+    </footer>
 
 </body>
 </html>
